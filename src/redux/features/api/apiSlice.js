@@ -2,7 +2,7 @@
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000'; // Fallback to localhost if env variable is not set
+const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api'; // Fallback to localhost if env variable is not set
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({ 
